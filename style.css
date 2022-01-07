@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Bree Serif", sans-serif;
+}
+body{
+    background-color: #f7f7f7;
+}
+#form{
+    display: none;
+}
+#typing{
+    padding: 4px 6px;
+    font-size: 22px;
+    border: 2px solid rgba(4, 143, 143);
+    border-radius: 4px;
+}
+.btn{
+    background-color: rgb(16, 158, 158);
+    font-size: 17px;
+    border: 2px solid rgba(4, 143, 143, 0.384);
+    color: #f7f7f7;
+}
+.btn:hover{
+    background-color: rgb(16, 158, 158);
+    color: #f7f7f7;
+    border: 2px solid rgba(4, 143, 143, 0.384);
+    animation: example 0.5s linear;
+}
+@keyframes example {
+    0%{
+        background-color: rgb(16, 158, 158);
+        border: 2px solid rgba(4, 143, 143, 0.384);
+        color: #f7f7f7;
+    }
+    0%{
+        background-color: rgb(120, 209, 224);
+        border: 2px solid rgba(4, 143, 143);
+        color: #f7f7f7;
+    }
+}

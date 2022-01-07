@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Exam</title>
+    <link href='https://fonts.googleapis.com/css?family=Bree Serif' rel='stylesheet'>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="about" class="container-fluid p-3 pt-1">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 container-md p-1">
+                <div class="p-4 border bg-light text-dark rounded full-height">
+                    <h1 class="text-center">Math Exam</h1>
+                    <h3 class="text-center">Score : <span id="score">0</span></h3>
+                    <h4 class="text-center" id="question"><span id="num1">1</span> <span id="op">+</span> <span id="num2">2</span> = ??</h4>
+
+                    <div class="container-fluid mt-3" id="hide_table">
+                        <div class="row">
+                            <div class="col-12 container-md p-1">
+                                <div class="border bg-light text-dark rounded">
+                                    <input type="text" disabled="disabled" id="typing" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 container-md p-1">
+                                <div class="border bg-light text-dark rounded">
+                                    <button onclick="dis('1')" class="btn w-100">1</button>
+                                </div>
+                            </div>
+                            <div class="col-4 container-md p-1">
+                                <div class="border bg-light text-dark rounded">
+                                    <button onclick="dis('2')" class="btn w-100">2</button>
+                                </div>
+                            </div>
+                            <div class="col-4 container-md p-1">
+                                <div class="border bg-light text-dark rounded">
+                                    <button onclick="dis('3')" class="btn w-100">3</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-4 container-md p-1">
+                                <div class="border bg-light text-dark rounded">
+                                    <button onclick="dis('4')" class="btn w-100">4</button>
+                                </div>
+                            </div>
+                            <div class="col-4 container-md p-1">
+                                <div class="border bg-light text-dark rounded">
+                                    <button onclick="dis('5')" class="btn w-100">5</button>
+                                </div>
+                            </div>
+                            <div class="col-4 container-md p-1">
+                                <div class="border bg-light text-dark rounded">
+                                    <button onclick="dis('6')" class="btn w-100">6</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-4 container-md p-1">
+                                <div class="border bg-light text-dark rounded">
+                                    <button onclick="dis('7')" class="btn w-100">7</button>
+                                </div>
+                            </div>
+                            <div class="col-4 container-md p-1">
+                                <div class="border bg-light text-dark rounded">
+                                    <button onclick="dis('8')" class="btn w-100">8</button>
+                                </div>
+                            </div>
+                            <div class="col-4 container-md p-1">
+                                <div class="border bg-light text-dark rounded">
+                                    <button onclick="dis('9')" class="btn w-100">9</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-4 container-md p-1">
+                                <div class="border bg-light text-dark rounded">
+                                    <button onclick="clr()" class="btn w-100">CLEAR</button>
+                                </div>
+                            </div>
+                            <div class="col-4 container-md p-1">
+                                <div class="border bg-light text-dark rounded">
+                                    <button onclick="dis('0')" class="btn w-100">0</button>
+                                </div>
+                            </div>
+                            <div class="col-4 container-md p-1">
+                                <div class="border bg-light text-dark rounded">
+                                    <button onclick="dis('-')" class="btn w-100">-</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 container-md p-1">
+                                <div class="border bg-light text-dark rounded">
+                                    <button onclick="entr()" class="btn w-100">ENTER</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="form">
+                        <input type="hidden" id="h1" value="ahmed0saber">
+                        <input type="hidden" id="h2" value="math-exam">
+                        <input type="text" class="form-control" placeholder="Username" id="t1">
+                        <button id="b1" class="btn btn-primary mt-2">Submit</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-8 container-md p-1">
+                <div class="p-4 border bg-light text-dark rounded full-height" id="leaderboard">
+                    <h1 class="text-center">Leaderboard</h1>
+                    <div class="row">
+                        <button class="btn btn-primary" id="r1">Refresh</button>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-3 container-md p-1 bg-light text-dark">
+                            <p>Rank</p>
+                        </div>
+                        <div class="col-5 container-md p-1 bg-light text-dark">
+                            <p>Name</p>
+                        </div>
+                        <div class="col-4 container-md p-1 bg-light text-dark">
+                            <p>Score</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./script.js"></script>
+</html>
