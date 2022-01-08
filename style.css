@@ -39,3 +39,8 @@ body{
         color: #f7f7f7;
     }
 }
+#names{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
